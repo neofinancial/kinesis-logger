@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const AWS = require('aws-sdk');
 const { KinesisReadable } = require('kinesis-streams');
 const { subSeconds } = require('date-fns');

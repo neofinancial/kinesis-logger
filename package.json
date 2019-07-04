@@ -1,7 +1,7 @@
 {
   "name": "kinesis-logger",
   "description": "Read from the specified Kinesis stream and log messages to the console",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "Neo Financial Engineering <engineering@neofinancial.com>",
   "main": "index.js",
   "bin": "index.js",
