@@ -4,11 +4,12 @@ const { subSeconds } = require('date-fns');
 const yargs = require('yargs');
 
 const readStream = async args => {
-  const client = new AWS.Kinesis({ region: args.region, maxRetries: 10 });
+  const client = new AWS.Kinesis({ region: args.region });
   const timestamp = subSeconds(new Date(), args.offset);
   const reader = new KinesisReadable(client, args.name, {
     logger: console,
     parser: JSON.parse,
+    restartOnClose: true,
     ShardIteratorType: 'AT_TIMESTAMP',
     Timestamp: timestamp
   });
