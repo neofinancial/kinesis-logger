@@ -1,0 +1,33 @@
+{
+  "name": "kinesis-logger",
+  "description": "Read from the specified Kinesis stream and log messages to the console",
+  "version": "1.0.0",
+  "author": "Neo Financial Engineering <engineering@neofinancial.com>",
+  "main": "index.js",
+  "bin": "index.js",
+  "license": "MIT",
+  "homepage": "https://github.com/neofinancial/kinesis-logger",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neofinancial/kinesis-logger"
+  },
+  "engines": {
+    "node": "^8.10.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "aws",
+    "kinesis",
+    "stream",
+    "javascript",
+    "node"
+  ],
+  "dependencies": {
+    "aws-sdk": "^2.488.0",
+    "date-fns": "^1.30.1",
+    "kinesis-streams": "^0.12.0",
+    "yargs": "^13.2.4"
+  }
+}
